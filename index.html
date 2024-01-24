@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <html data-theme="cupcake"></html> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <!-- tailwind and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/d82780495f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section -->
+    <header class="md:container md:mx-auto h-[700px]">
+        <!-- nav section -->
+    <nav>
+        <div class="items-center justify-center">
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl text-white">Hockey<Span class="text-[#FF4240]">'</Span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex cursor-pointer">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-[#FF4240]"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+              <a class="btn bg-[#FF4240] text-[#ffff]">Get Ticket</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- carouse section -->
+    <div class="carouse h-screen sm:items-center lg:flex lg:relative items-center justify-center lg:-mt-10">
+        <div id="slide1" class="carousel-item relative w-5/6">
+            <img src="./Images/1.png" class="w-full" />
+             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+  </div>
+   <!-- MEET all the heroes section -->
+  <div class=" bg-[#131318;] lg:w-[550px] sm:w-[500px] text-gray-50 p-5 rounded-xl lg:relative lg:-top-[225px] lg:-right-[600px] -sm:relative sm:bottom-[200px] sm:-mb-10 mb-0">
+    <h1 class="mb-4 text-xl font-bold">Meet all the heroes from the field</h1>
+    <p class="text-[white] font-light">someone who gives of himself, often putting his own life at great risk, for the greater good of others</p>
+  </div>
+    </header>
+    <main class="md:container md:mx-auto">
+      <!-- professional hockey club -->
+          <section>
+            <div class="Hockey-club lg:w-[1300px] sm:w-[600px] lg:h-[410px] sm:h-[200px]">
+              <h1 class="font-semibold items-center justify-center text-center lg:text-3xl sm:text-xl text-white">Professional Hockeys Club</h1>
+              <p class="relative lg:left-[440px] mt-5 font-normal text-center text-base w-[400px]">The National Hockey League (NHL; French: Ligue nationale de hockey [liɡ nɑsjɔnal də ɔkɛ], LNH) is a professional ice hockey league in North America comprising 32 teams—25 in the United States and 7 in Canada.</p>
+            </div>
+          </section>
+          <!-- progress section -->
+          <div class="progress-bar place-items-center relative lg:left-[240px] lg:grid lg:grid-cols-4 lg:grid-rows-[min-content_1fr] text-center items-center justify-center lg:w-[800px] -mt-[150px]">
+            <div class="progress-bar1 lg:w-44">
+              <div class="radial-progress text-red-600" style="--value:70;" role="progressbar">87%</div>
+              <h3 class="text-lg font-bold">Prayer Facility</h3>
+              <p class="text-sm font-extralight">Prayer is the method of worship and the main connection of man to Allah (God)</p>
+            </div>
+            <div class="progress-bar2 lg:w-44">
+              <div class="radial-progress text-amber-300" style="--value:70;" role="progressbar">95%</div>
+              <h3 class="text-lg font-bold">Experienced Coach</h3>
+              <p class="text-sm font-extralight">It reminded the experienced coach of a similar situation in his career.</p>
+            </div>
+            <div class="progress-bar3 lg:w-44">
+              <div class="radial-progress text-emerald-400" style="--value:70;" role="progressbar">90%</div>
+              <h3 class="text-lg font-bold">Senior Player</h3>
+              <p class="text-sm font-extralight">Senior Player means any Player who does not fall</p>
+            </div>
+            <div class="progress-bar4 lg:w-44">
+              <div class="radial-progress text-pink-400" style="--value:70;" role="progressbar">80%</div>
+              <h3 class="text-lg font-bold">Training Ground</h3>
+              <p class="text-sm font-extralight">an area where people prepare for sporting competitions</p>
+            </div>
+          </div>
+          <!-- program section -->
+          <div class="hero">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold text-white">Program Sections</h1>
+                <p class="py-6">Program sections, or psects, are simply a section of code or data. They are a way of grouping together parts of a program </p>
+              </div>
+            </div>
+          </div>
+          <section class="sm:container sm:mx-auto">
+            <div class="program-wrapper lg:grid lg:grid-cols-2 lg:grid-rows-[min-content_1fr]">
+            <div class="hero rounded-lg lg:w-[550px] lg:h-[300px] lg:ml-14 lg:mb-10 mb-5" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-left align-bottom">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-3xl font-bold text-white">Junior Program</h1>
+                  <p class="mb-5 text-slate-200">The Junior Professional Associate (JPA) program is a unique opportunity to gain entry-level professional experience and first-hand exposure to the challenges – and rewards – of international development.</p>
+                  <button class="btn border-none bg-[#FF4240;] text-[#ffff]">Register Now!</button>
+                </div>
+              </div>
+            </div>
+            <div class="hero rounded-lg lg:w-[550px] lg:h-[300px] mb-5 lg:-mr-12" style="background-image: url(./Images/3.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-left align-bottom">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-3xl font-bold text-white">Teenager Program</h1>
+                  <p class="mb-5 text-slate-200">Welcome to pas cu pas (step by step), the teenage group in Floresți. This teen and young people’s group meets once a week and is for ages 15-25. We sing, dance, study the Bible, eat, drink and play games together.</p>
+                  <button class="btn border-none bg-[#FF4240;] text-[#ffff]">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero rounded-lg lg:w-[1150px] lg:h-[300px] lg:ml-12 " style="background-image: url(./Images/4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-start ">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl font-bold text-white">Professional Program</h1>
+                <p class="mb-5 text-slate-200">Young Professionals (YPs) are recruited from around the world, with preference to nationals of WBG member countries and countries of operations. We welcome all qualified individuals from diverse professional, academic, and cultural backgrounds to apply.</p>
+                <button class="btn border-none bg-[#FF4240;] text-[#ffff]">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          </section>
+          <!-- Our new products -->
+          <div class="hero mt-10 mb-10">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="lg:text-4xl sm:text-3xl font-bold text-white">Our New Products</h1>
+                <p class="py-5">The year is just about wrapped, and we’re all ready to say goodbye to 2023 and hello to 2024. But before we get excited about what the new year will bring, let’s take a look back at 23 of our biggest product moments from 2023!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products section 1 -->
+          <div class="products-wrapper grid lg:grid-cols-2">
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images/5.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">World Cup Flags Football</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+          <!-- product section 2 -->
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images//6.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">World Cup Flags Football</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+          <!-- product section 3 -->
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images/7.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">Cap For Hockeys</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+          <!-- product section 4 -->
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images/8.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">World Cup Flags Football</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+          <!-- product section 5 -->
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images/9.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">World Cup Flags Football</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+          <!-- product section 6 -->
+          <div class="hero lg:w-[500px] lg:h-[200px]">
+            <div class="hero-content flex-col lg:flex-row">
+              <img class="w-[180px] rounded-lg" src="./Images/10.png" class="max-w-sm rounded-lg shadow-2xl"/>
+              <div class="space-y-0">
+                  <div class="rating space-x-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <span class="">5.0</span>
+                      <i class="fa-regular fa-eye"></i>
+                      <span>20</span>
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-slate-50" checked />
+                      <span>200</span>
+                  </div>
+                <h1 class="text-xl font-bold mb-0 text-white">World Cup Flags Football</h1>
+                <p class="text-lg py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+                <span class="text-red-500 font-medium">Price - $22.00</span>
+                <i class="fa-solid fa-dolly"></i>
+                <span>Delivery Fee : Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Client Question section -->
+        <div class="hero mt-20">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold text-white">Clients Question</h1>
+              <p class="py-6">When you are offering technical service to clients, knowing why a client is unsatisfied is the first step toward the solution. For that, you need to ask the right set of questions to dig into their pain points and straighten the facts.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-gray-800 mb-10">
+        <section class="grid grid-cols-1 lg:grid-cols-2 -space-x-6">
+          <div class="question-img lg:w-[400px] sm:left-10">
+            <img class="" src="./Images/11.png" alt="">
+          </div>
+          <div class="accordian lg:w-[600px] w-[400px] ">
+            <div class="collapse collapse-plus bg-base-200" >
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium text-white">
+                Our Equipment
+              </div>
+              <div class="collapse-content"> 
+                <p>Discover a complete range of innovative fluid distribution equipment designed to meet the needs of the electronics industry, laboratories, and other industrial markets.</p>
+              </div>
+            </div>
+            <hr class="text-gray-700">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium text-white">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>We work with players of all ages and skill levels and would love to help you (or your kid) take your game to the next level.</p>
+              </div>
+            </div>
+            <hr class="text-gray-400">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium text-white">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>Private Lessons are available to children and adults of all experience levels from beginners through the most advanced levels of study.</p>
+              </div>
+            </div>
+            <hr class="text-gray-400">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium text-white">
+                Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p>Ski touring is skiing in the backcountry on unmarked or unpatrolled areas. Touring is typically done off-piste and outside of ski resorts, and may extend over a period of more than one day.</p>
+              </div>
+            </div>
+            <hr class="text-gray-400">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium text-white">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>If you’re wide awake when the stars shine, and half-asleep when the sun takes over, that’s your sign to book a stay in one of our stargazing prime spots!</p>
+              </div>
+            </div>
+            <hr class="text-gray-400">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="text-white collapse-title text-xl font-medium">
+                Pricings
+              </div>
+              <div class="collapse-content"> 
+                <p>Pricing is the process whereby a business sets the price at which it will sell its products and services, and may be part of the business's marketing plan.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="text-gray-400 mt-10">
+        <!-- get in touch section -->
+        <div class="hero">
+  <div class="hero-content text-center mt-10">
+    <div class="max-w-md">
+      <h1 class="text-5xl font-bold text-white">Get In Touch</h1>
+      <p class="py-6 text-slate-200">This is my card, with my direct phone number. I’ll leave it here on the mantelpiece. If Salim comes home or gets in touch, or if you have any further thoughts, call me.</p>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer>
+      <section>
+        <footer class="footer p-10 bg-blue-950 text-neutral-content">
+          <nav>
+            <h1 class="font-bold text-3xl text-white">Get In Touch</h1>
+            <p class="w-80">This is my card, with my direct phone number. I’ll leave it here on the mantelpiece. If Salim comes home or gets in touch, or if you have any further thoughts, call me.</p>
+            <div class="contact-info space-x-2">
+              <i class="fa-solid fa-envelope text-red-700"></i>
+              <span class="text-white">hockeys@support.com</span>
+              <br>
+            </div>
+            <div class="contact-info-2 space-x-2">
+              <i class="fa-solid fa-phone text-red-700"></i>
+              <span class="text-white">(+62) 123-321-543</span>
+            </div>
+          </nav> 
+          <nav class="grid-cols-1">
+            <header class="footer-title font-bold text-lg text-white">Company</header> 
+            <a class="link link-hover">Abour Us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News And Articlet</a>
+            <a class="link link-hover">Legal Notice</a>
+          </nav> 
+          <nav>
+            <header class="footer-title font-bold text-lg text-white">Support</header> 
+            <a class="link link-hover">Help Center</a>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Ticket Support</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav> 
+          <nav>
+            <header class="footer-title font-bold text-lg text-white">Services</header> 
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private lesson</a>
+            <a class="link link-hover">Hockeys For Kid</a>
+            <a class="link link-hover">Hockeys For Adult</a>
+          </nav>
+        </footer>
+      </section>
+
+    </footer>
+</body>
+</html>
